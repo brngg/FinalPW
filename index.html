@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brandon Cheng - Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mediaqueries.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=League+Spartan:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">brandon.</div>
+        <div class="nav-items">
+            <ul class="nav-links">
+                <li><a href="#about">about</a></li>
+                <li><a href="#education">education</a></li>
+                <li><a href="#experience">experience</a></li>
+                <li><a href="#projects">projects</a></li>
+                <li><a href="#resume">resume</a></li>
+                <li><a href="#contact">contact</a></li>
+
+                <div class="theme-switch-wrapper">
+                    <label class="theme-switch" for="checkbox">
+                        <input type="checkbox" id="checkbox" />
+                        <div class="slider round"></div>
+                    </label>
+                </div>
+
+            </ul>
+        </div>
+    </nav>
+    
+    <nav id="hamburger-nav">
+        <div class="logo">brandon.</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">about</a></li>
+                <li><a href="#education" onclick="toggleMenu()">education</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">projects</a></li>
+                <li><a href="#resume" onclick="toggleMenu()">resume</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">contact</a></li>
+                <li class="theme-switch-wrapper">
+                    <label class="theme-switch" for="checkbox-mobile">
+                        <input type="checkbox" id="checkbox-mobile" />
+                        <div class="slider round"></div>
+                    </label>
+                </li>
+            </div>
+        </div>
+    </nav>
+
+    <div class="portfolio-content">
+        <section id="about" class="section">
+            <img src="images/image.jpg" alt="pfp" class="profile-pic">
+            <div class="about-content">
+                <h2>About Me</h2>
+                <div class="about-text">
+                    <p>Hi I’m Brandon.</p>
+                    <p>Welcome to my website. I am a recent graduate in Computer Science exploring various fields in technology that not only interest me but also challenges me. Outside of professional pursuits I enjoy cycling and fitness training as a way to stay active. I also have a niche interest in custom mechanical keyboards and enjoy gaming as a way to connect with friends and unwind.</p>
+                    <p>I’m open and eager for new opportunities and learning from these opportunities whether it is in technology or personal interest. I believe in bringing the same enthusiasm and dedication to both professional work and personal hobbies. Feel free to explore and pursue the site. I am open to connecting with others just send me a message on LinkedIn or send me an email.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="section">
+            <h2>Education</h2>
+            <p><strong>Bachelor's in Computer Science</strong> - Queens College</p>
+            <p>Graduation Year: 2024</p>
+            
+            <!--<p><strong>Certification or Additional Training</strong></p>-->
+            <!--<p>Institution Name, Year Completed</p>-->
+        </section>
+
+        <section id="experience" class="section">
+            <h2>Experience</h2>
+            <div class="job">
+                <h3>IT/Developer Intern</h3>
+                <p class="job-info">Day & Night | New Hyde Park, New York | Apr 2023 – Jul 2023</p>
+                <p class="job-description">
+                    Provided IT support and system setup for a 50+ employee company. Contributed to developing and enhancing a ticketing system mobile app, improving user experience and reducing call volume. Refactored and documented complex codebase, creating comprehensive guides for API usage and data handling, which improved code readability and reduced onboarding time for new developers.
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            
+            <div class="project">
+                <p class="project-title">AWS Servlet, <span class="project-year">2024</span></p>
+                <p class="project-description">Designed and deployed an AWS-hosted servlet for file storage in a MySQL database, integrated Apache and Tomcat for management, and used Kubernetes for load balancing and scalability.</p>
+            </div>
+
+            <div class="project">
+                <p class="project-title">Node.js API Integration Project (Google Sheets & AlphaVantage), <span class="project-year">2023</span></p>
+                <p class="project-description">Developed a Node.js app integrating Google Sheets and AlphaVantage APIs for real-time financial data, implemented OAuth 2.0 authentication for secure access, and demonstrated proficiency in HTTP/HTTPS protocols.</p>
+            </div>
+
+            <div class="project">
+                <p class="project-title">Huffman Encoding Implementation, <span class="project-year">2022</span></p>
+                <p class="project-description">Designed and implemented a Huffman Encoding algorithm in Java, resulting in a reliable compression tool for large data sets.</p>
+            </div>
+            
+
+            <!--<div class="project">
+                template to use 
+                <p class="project-title"> text , <span class="project-year">2024</span></p>
+                <p class="project-description"> text </p>
+                <p class="project-link">↳ </p>
+                <p class="project-link">↳ </p>
+            </div>-->
+
+        </section>
+
+        
+        <section id="resume" class="section">
+            <h2>Resume</h2>
+            <p>View or download my resume to learn more about my qualifications and experience.</p>
+            <div class="resume-buttons">
+                <a href="assets/resume/Brandon_Resume.pdf" target="_blank" class="resume-link">View Resume</a>
+                <a href="assets/resume/Brandon_Resume.pdf" download="assets/resume/Brandon_Resume.pdf" class="resume-link">Download Resume</a>
+            </div>
+        </section>
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <p>Email: chengbr3@brandon.com</p>
+            <p>Location: New York, New York</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/brandon-cheng-66371a1b2/" class="contact-link" target="_blank">https://www.linkedin.com/in/brandon-cheng-66371a1b2/</a></p>
+            <p>GitHub: <a href="https://github.com/brngg" class="contact-link" target="_blank">https://github.com/brngg</a></p>
+        </section>
+    </div>
+
+    <script src="js/app.js"></script>
+    
+</body>
+</html>
